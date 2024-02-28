@@ -28,6 +28,7 @@ module.exports = {
       if (error) {
         console.log(error);
       } else {
+        res.status(201).send({ message: "New Cart item Added", resp });
         console.log("Email send successfully to the user");
       }
     });
